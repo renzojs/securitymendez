@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="es">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En esta página encontrarás qué es un virus informático y que daños produce en los equipos." />
+    <title>Virus informáticos y antivirus: ¿Que es un virus informático?</title>
+    <meta property="og:title" content="Virus informáticos y antivirus: ¿Que es un virus informático?" />
+    <meta property="og:description" content="En esta página encontrarás qué es un virus informático y que daños produce en los equipos." />
+    <meta property="og:type" content="gcfglobal.lesson" />
+    <meta property="og:image" content="https://media.gcflearnfree.org/global/layout/social/gcf-website-image.png" />
+    <meta property="og:site_name" content="GCFGlobal.org" />
+    <meta property="fb:admins" content="100002095670400" />
+    <meta property="fb:page_id" content="198172680436" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="GCFGlobal.org" />
+    <meta name="twitter:title" content="Virus informáticos y antivirus: ¿Que es un virus informático?" />
+    <meta name="twitter:description" content="En esta página encontrarás qué es un virus informático y que daños produce en los equipos." />
+    <meta name="twitter:url" content="index.html" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,700i|Kalam:400' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preload" as="style" href="https://edu.gcfglobal.org/styles/deployment-es/lessonpage-es.concat.css">
+    <link rel="stylesheet" href="https://edu.gcfglobal.org/styles/deployment-es/lessonpage-es.concat.css">
+    <script defer src="https://edu.gcfglobal.org/scripts/deployment-es/lessonpage-es.concat.js" type="text/javascript"></script>
+    <link href="index.html" rel="canonical" />
+    <link rel="manifest" href="https://edu.gcfglobal.org/manifest.json" />
+    <link rel="stylesheet" href="../../../estilo.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/Logo1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../img/Logo2.png">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+            OneSignal.init({
+                appId: '423d4116-59bc-4eb4-9da2-74f755f06c80'
+            });
+        });
+        // Check subscription and add tag
+        OneSignal.push(function() {
+            OneSignal.on('subscriptionChange', function(isSubscribed) {
+                console.log("The user's subscription state is now:", isSubscribed);
+                if (isSubscribed == true) {
+                    OneSignal.sendTags({
+                        course: 'virus-informaticos-y-antivirus'
+                    }).then(function(tagsSent) {
+                        console.log("tagsSent: " + JSON.stringify(tagsSent));
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script>
+        (function(m, a, i, l, e, r) {
+            m['MailerLiteObject'] = e;
+
+            function f() {
+                var c = {
+                    a: arguments,
+                    q: []
+                };
+                var r = this.push(c);
+                return "number" != typeof r ? r : f.bind(c.q);
+            }
+            f.q = f.q || [];
+            m[e] = m[e] || f.bind(f.q);
+            m[e].q = m[e].q || f.q;
+            r = a.createElement(i);
+            var _ = a.getElementsByTagName(i)[0];
+            r.async = 1;
+            r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+            _.parentNode.insertBefore(r, _);
+        })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+        var ml_account = ml('accounts', '1545190', 'u3b1c1l2d0', 'load');
+    </script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1060708011"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-1060708011');
+    </script>
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header>
+            <div id="page-header" class="desktop-header">
+                <div class="primary-header">
+                    <div id="subjects-search">
+                        <div id="subjects-search-box">
+                            <div class="topnav-sls-container">
+                                <a class="envivo-butt livebutt" target="_blank" href="#"><img src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/envivo.svg"></a>
+                                <a aria-label="GCFGlobal homepage" class="logo-link" href="../../../index.html">
+                                    <img class="logo logo-left main-logo-es" src="../../../img/Logo1.png" alt="GCFGlobal Logo">
+                                    <img class="logo logo-middle logo-es" src="../../../img/Logo2.png" alt="GCFAprendeLibre Logo">
+                                </a>
+                                <form id="smallSearchbar" action="../../../search/index.html" onSubmit="showSearchSpinner()">
+                                    <span class="form-content-container">
+<input class="topnav-search-field-small" pattern=".{1,}" required type="text" name="q" placeholder="¿Qué quieres aprender?" title="Search bar">
+<button class="search-submit-btn-small search-close-btn" type="button" aria-label="close search bar">
+<i onClick="showSearchBar('close')" class="material-icons close-search-x">close</i>
+</button>
+<button class="search-submit-btn-small" type="submit" aria-label="search button">
+<i onClick="showSearchBar('close')" class="material-icons">search</i>
+</button>
+<img class="search-submit-spinner left-spinner" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/transparent-loading-spinner.gif" alt="">
+</span>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="topnav-rightbox">
+                            <button onClick="showSearchBar('open')" class="header-btn header-search-btn" aria-label="open search bar">
+<i class="material-icons">search</i>
+</button>
+                            <button class="subjects-select" onclick="toggleSubjectsDropdown()">
+<i class="dropdown-hamburger material-icons">menu</i>
+<p>Menú</p>
+</button>
+                            <div class="dropdown-wrapper">
+                                <button class="dropdown-close-x" onclick="toggleSubjectsDropdown()">
+<i class="material-icons">close</i>
+</button>
+                                <div class="dropdown-inner site-nav subjectMenuOption selectedMenuOption">
+                                    <ul class="site-nav-contents site-nav">
+                                        <li class="supercollection">
+                                            <a href="../subjects/tecnologia/index.html">Tecnología</a>
+                                            <ul class="level-1">
+                                                <li>
+                                                    <a href="../../../informatica-basica/index.html">Informática básica</a>
+                                                    <a href="../../../seguridad-en-internet/index.html">Seguridad en las Redes Sociales</a>
+                                                    <a href="../../../virus-informaticos-y-antivirus/index.html">Virus Informaticos y Antivius</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a onclick="window.print()" class="print-button header-btn header-print-link">
+                                <i class="material-icons">print</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="display:none;" class="tutorial-banner">
+                    <i class="material-icons">info</i>
+                    <span>Bienvenido al curso. En este menú verás todas las lecciones que hemos preparado para ti. Para iniciar, solamente, haz clic en la lección que más te interese.</span>
+                    <button onclick="$('.tutorial-banner').remove()" class="wrapper-button close"><i class="material-icons">close</i></button>
+                </div>
+
+                <div class="sub-header">
+                    <div id="corner-gradient-left"></div>
+                    <div id="corner-gradient-right"></div>
+                    <div class="headerfooter-content-wrapper">
+                        <div id="subheaderContentContainer">
+                            <div class="header-nodesc es">
+
+                                <div class="title-content">
+                                    <h1><a class="current-tutorial-title" href="../../index.html">Virus informáticos y antivirus</a>&nbsp;-</h1>
+                                    <h2><span id="current-lesson-title">¿Que es un virus informático?</span></h2>
+                                </div>
+                                <a class="header-tutorial-link" href="../../index.html">Volver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="print-header">
+                <div class="print-header-wrapper">
+                    <header>
+                        <div class="desktop-header">
+                            <h1>
+                                <div class="print-first-title">Virus informáticos y antivirus</div>
+                                <div class="print-second-title">¿Que es un virus informático?</div>
+                            </h1>
+                            <img class="logo" src="../../../img/imprimir.png" alt="GCFLearnFree.org" />
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <div class="mobile-header">
+                <div id="page-top">
+                    <a data-route="home" class="home-link" href="../../../index.html">
+
+                        <img class="homeicon" src="../../../img/Logo2.png" alt="GCFGlobal Logo">
+                    </a>
+                    <a class="envivo-butt-mobile livebutt" target="_blank" href="#"><img src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/envivo.svg"></a>
+                    <i onclick="toggleSearchCollapse()" class="material-icons menu-icon menu-icon-left">search</i>
+                    <i onclick="toggleNavCollapse()" class="material-icons menu-icon menu-icon-right">menu</i>
+                </div>
+                <div id="navcollapse">
+                    <div class="navcollapsecontent">
+                        <a href="../../../info/quienes-somos/1/index.html">¿Quiénes somos?</a>
+                        <a href="../../../info/preguntas-frecuentes/1/index.html">Preguntas frecuentes</a>
+                        <a href="../../../info/contactanos/1/index.html">Contáctanos</a>
+
+                    </div>
+                </div>
+                <div class="search-control">
+                    <div class="search-container">
+                        <div class="search-inner-container">
+                            <a class="mobile-back-to-tutorial" href="../../index.html">
+                                <span class="no-break"><i class="material-icons">navigate_before</i> Curso</span>
+                            </a>
+                            <form id="gcfsearch" method="get" action="../../../search/index.html" onSubmit="showSearchSpinner()">
+                                <button type="submit" aria-label="search button"><i class="material-icons">search</i></button>
+                                <div class="mobile-search-input-wrapper">
+                                    <input id="request" class="searchinput" pattern=".{1,}" required type="text" name="q" name="q" size="21" maxlength="120" placeholder="¿Qué quieres aprender?" autocomplete="off" title="Search bar">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id="background">
+        <div class="mobile-lesson-title">
+            <h1>Virus informáticos y antivirus: ¿Que es un virus informático?</h1>
+        </div>
+        <div id="page-wrapper">
+            <div id="content-area">
+                <div>
+                    <div class="text-plus-page content-item">
+                        <div id="lessoncontent">
+                            <div id="/es/virus-informaticos-y-antivirus/que-es-un-virus-informatico/1/" class="lesson-block lesson imgBoxShadow" data-title="¿Que es un virus informático?">
+                                <div id="first-divider" class="divider-box">
+                                    <div class="infinite-scroll-divider"></div>
+                                    <h4>Página 1: ¿Que es un virus informático?</h4>
+                                </div>
+                                <h3>¿Que es un virus informático?</h3>
+                                <p>Los virus son programas informáticos que tienen como objetivo alterar el&nbsp;funcionamiento del computador, sin que el usuario se de cuenta. Estos, por lo general, infectan otros archivos del sistema con la intensión de
+                                    modificarlos para destruir de manera intencionada archivos o datos almacenados en tu computador. Aunque no todos son tan dañinos. Existen unos un poco más inofensivos que se caracterizan únicamente por ser molestos.</p>
+                                <div class="centerImage"><img class="maxWidthImage" src="https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/virus_informaticos_y_antivirus/image/virusyantivirus_xl.png"></div>
+                                <h3>Métodos de infección</h3>
+                                <p></p>
+                                <p>Hay muchas formas con las que un computador puede exponerse o infectarse con virus. Veamos algunas de ellas:</p>
+                                <div class="centerImage"><img class="maxWidthHalf" src="https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/virus_informaticos_y_antivirus/image/virus_02_l.png" alt="Formas para infectarse de virus"></div>
+                                <p></p>
+                                <ul>
+                                    <li>Mensajes dejados en redes sociales como Twitter o Facebook</a>.</li>
+                                    <li>Archivos adjuntos en los mensajes de correo electrónico</a>.</li>
+                                    <li>Sitios web sospechosos.</li>
+                                    <li>Insertar USBs, DVDs o CDs con virus.</li>
+                                    <li>Descarga de aplicaciones o programas de internet.</li>
+                                    <li>Anuncios publicitarios falsos.</li>
+                                </ul>
+                                <p></p>
+                                <h3>¿Cómo infecta un virus el computador?</h3>
+                                <ol>
+                                    <li>
+                                        <p>El usuario instala un programa infectado en su computador. La mayoría de las veces se desconoce que el archivo tiene un virus.</p>
+                                    </li>
+                                    <li>
+                                        <p>El archivo malicioso se aloja en la memoria RAM de la computadora, así el programa no haya terminado de instalarse.</p>
+                                    </li>
+                                    <li>
+                                        <p>El virus infecta los archivos que se estén usando en es ese instante.</p>
+                                    </li>
+                                    <li>
+                                        <p>Cuando se vuelve a prender el computador, el virus se carga nuevamente en la memoria RAM y toma control de algunos servicios del sistema operativo, lo que hace más fácil su replicación para contaminar cualquier
+                                            archivo que se encuentre a su paso.</p>
+                                    </li>
+                                </ol>
+
+                                <div class="infinite-nav ">
+                                    <a href="../../que-son-los-antivirus/1/index.html">Siguiente Contenido</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="push"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="desktopfooter">
+            <div class="main-footer">
+                <div class="footer-drag-handle" onclick="toggleFooter()">
+                    <i class="up-arrow material-icons">keyboard_arrow_up</i>
+                    <i class="down-arrow material-icons">keyboard_arrow_down</i>
+                </div>
+
+                <div id="footerContent">
+                    <div>
+                        <div class="footer-links-container">
+                            <div id="sectionOne" class="text-links">
+                                <h4 class="footerheaders">Acerca De Nosotros</h4>
+                                <a href="info/quienes-somos/1/index.html">¿Quiénes somos?</a><br />
+                            </div>
+                            <div id="sectionTwo" class="text-links">
+                                <h4 class="footerheaders">Recursos Educativos</h4>
+                                <a href="../../../Docente/aprender.gcfglobal.org/es-material-docente.html">Espacio docente</a><br />
+                            </div>
+                            <div id="sectionThree" class="text-links">
+                                <h4 class="footerheaders">Ayuda y Soporte</h4>
+                                <a href="../../../info/preguntas-frecuentes/1/index.html">Preguntas frecuentes</a><br />
+                                <a href="../../../info/contactanos/1/index.html">Contáctanos</a>
+                            </div>
+                        </div>
+                        <div class="footer-logo-box">
+                            <div id="footer_social_media">
+                                <a href="https://www.facebook.com/Mendez-Security-103061712037255" target="_blank">
+                                    <img id="fb_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/facebook_icon.svg" alt="facebook" />
+                                </a>
+                                <a href="https://twitter.com/Mendez_Security" target="_blank">
+                                    <img id="twitter_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/twitter_icon.svg" alt="twitter" />
+                                </a>
+                                <a href="#" target="_blank">
+                                    <img id="youtube_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/youtube_icon.svg" alt="youtube" />
+                                </a>
+
+                                <a href="https://www.instagram.com/mendez_security/" target="_blank">
+                                    <img id="instagram_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/instagram_icon.svg" alt="instagram" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p id="copyright">&copy;2021 Liceo Bolivariano "Eduardo Delfin Mendez". Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <div class="mobilefooter">
+            <div class="footer-drag-handle" onclick="toggleMobileFooter()">
+                <i class="up-arrow material-icons">keyboard_arrow_up</i>
+                <i class="down-arrow material-icons">keyboard_arrow_down</i>
+            </div>
+            <div class="mobileFooterContent">
+                <a href="../../../index.html"><img class="globalicon" alt="GCFGlobal.org" src="img/Logo2.png"></img>
+                </a>
+                <p id="copyrightMobile">&copy;2021 Liceo Bolivariano "Eduardo Delfin Mendez". Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('load', function() {
+
+            jQuery('a.header-tutorial-link').click(function() {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-1060708011/U9qUCI2JURCrveT5Aw'
+                });
+            });
+            jQuery('a.nextLoadMore').click(function() {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-1060708011/JhjyCOmUbxCrveT5Aw'
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>

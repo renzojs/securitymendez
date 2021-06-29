@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="es">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <title>Info: Contáctanos</title>
+    <meta property="og:title" content="Info: Contáctanos" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="gcfglobal.info" />
+    <meta property="og:image" content="https://media.gcflearnfree.org/global/layout/social/gcf-website-image.png" />
+    <meta property="og:site_name" content="GCFGlobal.org" />
+    <meta property="fb:admins" content="100002095670400" />
+    <meta property="fb:page_id" content="198172680436" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="GCFGlobal.org" />
+    <meta name="twitter:title" content="Info: Contáctanos" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:url" content="../../contctanos/1/index.html" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Kalam:400' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preload" as="style" href="https://edu.gcfglobal.org/styles/deployment-es/info.concat.css">
+    <link rel="stylesheet" href="https://edu.gcfglobal.org/styles/deployment-es/info.concat.css">
+    <script defer src="https://edu.gcfglobal.org/scripts/deployment-es/info.concat.js" type="text/javascript"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link href="../../contctanos/1/index.html" rel="canonical" />
+    <link rel="stylesheet" href="../../../estilo.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/Logo1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../img/Logo2.png">
+    <link rel="manifest" href="https://edu.gcfglobal.org/manifest.json" />
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+            OneSignal.init({
+                appId: '423d4116-59bc-4eb4-9da2-74f755f06c80'
+            });
+        });
+        // Check subscription and add tag
+        OneSignal.push(function() {
+            OneSignal.on('subscriptionChange', function(isSubscribed) {
+                console.log("The user's subscription state is now:", isSubscribed);
+                if (isSubscribed == true) {
+                    OneSignal.sendTags({
+                        course: 'info'
+                    }).then(function(tagsSent) {
+                        console.log("tagsSent: " + JSON.stringify(tagsSent));
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="sticky-wrapper">
+        <div class="header-wrapper">
+            <header>
+                <div id="page-header" class="desktop-header">
+                    <div class="primary-header">
+                        <div id="subjects-search">
+                            <div id="subjects-search-box">
+                                <div class="topnav-sls-container">
+                                    <a class="envivo-butt livebutt" target="_blank" href="#"><img src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/envivo.svg"></a>
+                                    <a aria-label="GCFGlobal homepage" class="logo-link" href="../../../index.html">
+                                        <img class="logo logo-left main-logo-es" src="../../../img/Logo1.png" alt="GCFGlobal Logo">
+                                        <img class="logo logo-middle logo-es" src="../../../img/Logo2.png" alt="GCFAprendeLibre Logo">
+                                    </a>
+                                    <form id="smallSearchbar" action="../../../search/index.html" onSubmit="showSearchSpinner()">
+                                        <span class="form-content-container">
+<input class="topnav-search-field-small" pattern=".{1,}" required type="text" name="q" placeholder="¿Qué quieres aprender?" title="Search bar">
+<button class="search-submit-btn-small search-close-btn" type="button" aria-label="close search bar">
+<i onClick="showSearchBar('close')" class="material-icons close-search-x">close</i>
+</button>
+<button class="search-submit-btn-small" type="submit" aria-label="search button">
+<i onClick="showSearchBar('close')" class="material-icons">search</i>
+</button>
+<img class="search-submit-spinner left-spinner" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/transparent-loading-spinner.gif" alt="">
+</span>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="topnav-rightbox">
+                                <button onClick="showSearchBar('open')" class="header-btn header-search-btn" aria-label="open search bar">
+<i class="material-icons">search</i>
+</button>
+                                <button class="subjects-select" onclick="toggleSubjectsDropdown()">
+<i class="dropdown-hamburger material-icons">menu</i>
+<p>Menú</p>
+</button>
+                                <div class="dropdown-wrapper">
+                                    <button class="dropdown-close-x" onclick="toggleSubjectsDropdown()">
+<i class="material-icons">close</i>
+</button>
+                                    <div class="dropdown-inner site-nav subjectMenuOption selectedMenuOption">
+                                        <ul class="site-nav-contents site-nav">
+                                            <li class="supercollection">
+                                                <a href="../subjects/tecnologia/index.html">Tecnología</a>
+                                                <ul class="level-1">
+                                                    <li>
+                                                        <a href="../../../informatica-basica/index.html">Informática básica</a>
+                                                        <a href="../../../seguridad-en-internet/index.html">Seguridad en las Redes Sociales </a>
+                                                        <a href="../../../virus-informaticos-y-antivirus/index.html">Virus Informaticos y Antivius</a>
+                                                    </li>
+                                                    <li>
+                                                </ul>
+                                                </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a onclick="window.print()" class="print-button header-btn header-print-link">
+                                    <i class="material-icons">print</i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-header">
+                        <div id="corner-gradient-left"></div>
+                        <div id="corner-gradient-right"></div>
+                        <div class="headerfooter-content-wrapper">
+                            <div id="subheaderContentContainer">
+                                <div class="header-nodesc es">
+                                    <div class="title-content">
+                                        <h1><span id="current-lesson-title">Contáctanos</span></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-header">
+                    <div id="page-top">
+                        <a data-route="home" class="home-link" href="../../../index.html">
+
+                            <img class="homeicon" src="../../../img/Logo2.png" alt="GCFGlobal Logo">
+                        </a>
+                        <a class="envivo-butt-mobile livebutt" target="_blank" href="#"><img src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/envivo.svg"></a>
+                        <i onclick="toggleSearchCollapse()" class="material-icons menu-icon menu-icon-left">search</i>
+                        <i onclick="toggleNavCollapse()" class="material-icons menu-icon menu-icon-right">menu</i>
+                    </div>
+                    <div id="navcollapse">
+                        <div class="navcollapsecontent">
+                            <a href="index.html">¿Quiénes somos?</a>
+                            <a href="../../preguntas-frecuentes/1/index.html">Preguntas frecuentes</a>
+                            <a href="../../contactanos/1/index.html">Contáctanos</a>
+                        </div>
+                    </div>
+                    <div class="search-control">
+                        <div class="search-container">
+                            <div class="search-inner-container">
+                                <form id="gcfsearch" method="get" action="../../../search/index.html" onSubmit="showSearchSpinner()">
+                                    <button type="submit" aria-label="search button"><i class="material-icons">search</i></button>
+                                    <div class="mobile-search-input-wrapper">
+                                        <input id="request" class="searchinput" pattern=".{1,}" required type="text" name="q" name="q" size="21" maxlength="120" placeholder="¿Qué quieres aprender?" autocomplete="off" title="Search bar">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="background">
+            <div id="page-wrapper">
+                <div id="content-area">
+                    <div id="info">
+                        <div class="text-plus-page content-item">
+                            <div id="lessoncontent">
+                                <div id="/es/info/contactanos/1/" class="lesson-block lesson" data-title="Contáctanos">
+                                    <div id="first-divider" class="divider-box">
+                                        <div class="infinite-scroll-divider"></div>
+                                        <h4>Página 21: Contáctanos</h4>
+                                    </div>
+                                    <p>Nos gustaría que estés en contacto con nosotros y nos cuentes tus experiencias con nuestro sitio web. También puedes escribirnos&nbsp;si tienes dudas o sugerencias acerca de nuestro contenido.</p>
+                                    <p>Si deseas comunicarte con nosotros, escríbenos a la siguiente dirección de correo electrónico: <a>seguridadmendez21@gmail.com</a>
+                                        <p>Para estar actualizado constantemente con el contenido que publicamos, te invitamos a seguir nuestras redes sociales. Nos encuentras en:</p>
+
+                                        <div style="
+    float: left;
+    width: 100%;
+">
+                                            <p style="margin: 0 auto;display: block;width: 242px;">
+                                                <a href="https://twitter.com/Mendez_Security" target="_blank"><img src="https://media.gcflearnfree.org/content/5aac06471944ec1078757c7b_03_16_2018/twitter_icon.svg" style="    height: 25px !important;
+    float: left;
+    padding-right: 20px;"></a>
+                                                <a href="https://www.instagram.com/mendez_security/" target="_blank"><img src="https://media.gcflearnfree.org/content/5aac06471944ec1078757c7b_03_16_2018/instagram_ic.svg" style="    height: 25px !important;
+    float: left;
+    padding-right: 20px;"></a>
+                                                <a href="https://www.facebook.com/Mendez-Security-103061712037255" target="_blank"><img src="https://media.gcflearnfree.org/content/5aac06471944ec1078757c7b_03_16_2018/facebook_icon.svg" style="    height: 25px !important;
+    float: left;
+    padding-right: 20px;"></a>
+                                                <a href="" target="_blank"><img src="https://media.gcflearnfree.org/content/5aac06471944ec1078757c7b_03_16_2018/youtube_icon.svg" style="    height: 25px !important;
+    float: left;
+    padding-right: 20px;"></a>
+                                            </p>
+                                        </div>
+
+                                        <div style="
+    float: left;
+    width: 100%;
+">
+                                            <p style="text-align:center;">seguridadmendez21@</p>
+
+
+                                            <form action="correo.php" method="POST">
+                                                <div class="form">
+                                                    <h1>Contactanos</h1>
+                                                    <div class="grupo">
+                                                        <input type="text" name="nombre" id="" required><span class="barra"></span>
+                                                        <label>Nombre</label>
+                                                    </div>
+                                                    <div class="grupo">
+                                                        <input type="email" name="email" id="" required><span class="barra"></span>
+                                                        <label>Email</label>
+                                                    </div>
+                                                    <div class="grupo">
+                                                        <input type="text" name="asunto" id="" required><span class="barra"></span>
+                                                        <label>Asunto</label>
+                                                    </div>
+                                                    <div class="grupo">
+                                                        <textarea name="mensaje" id="" rows="3" required></textarea><span class="barra"></span>
+                                                        <label>Mensaje</label>
+                                                    </div>
+                                                    <button class="boton1" type="submit">Enviar</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="desktopfooter">
+                    <div class="main-footer">
+                        <div class="footer-drag-handle" onclick="toggleFooter()">
+                            <i class="up-arrow material-icons">keyboard_arrow_up</i>
+                            <i class="down-arrow material-icons">keyboard_arrow_down</i>
+                        </div>
+
+                        <div id="footerContent">
+                            <div>
+                                <div class="footer-links-container">
+                                    <div id="sectionOne" class="text-links">
+                                        <h4 class="footerheaders">Acerca De Nosotros</h4>
+                                        <a href="../../quienes-somos/1/index.html">¿Quiénes somos?</a><br />
+                                    </div>
+                                    <div id="sectionTwo" class="text-links">
+                                        <h4 class="footerheaders">Recursos Educativos</h4>
+                                        <a href="../../../Docente/aprender.gcfglobal.org/es-material-docente.html">Espacio docente</a><br />
+                                    </div>
+                                    <div id="sectionThree" class="text-links">
+                                        <h4 class="footerheaders">Ayuda y Soporte</h4>
+                                        <a href="../../../info/preguntas-frecuentes/1/index.html">Preguntas frecuentes</a><br />
+                                        <a href="../../../contactanos/1/index.html">Contáctanos</a>
+                                    </div>
+                                </div>
+                                <div class="footer-logo-box">
+                                    <div id="footer_social_media">
+                                        <a href="#" target="_blank">
+                                            <img id="fb_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/facebook_icon.svg" alt="facebook" />
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <img id="twitter_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/twitter_icon.svg" alt="twitter" />
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <img id="youtube_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/youtube_icon.svg" alt="youtube" />
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <img id="pinterest" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/pinterest_icon.svg" alt="pinterest" />
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <img id="instagram_link" class="footer_social_media_link" src="https://media.gcflearnfree.org/assets/edu-gcfglobal-site/images/social/instagram_icon.svg" alt="instagram" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright-wrapper">
+                        <p id="copyright">&copy;2021 Liceo Bolivariano "Eduardo Delfin Mendez". Todos los derechos reservados.</p>
+                    </div>
+                </div>
+                <div class="mobilefooter">
+                    <div class="footer-drag-handle" onclick="toggleMobileFooter()">
+                        <i class="up-arrow material-icons">keyboard_arrow_up</i>
+                        <i class="down-arrow material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <div class="mobileFooterContent">
+                        <a href="https://gcfglobal.org/"><img class="globalicon" alt="GCFGlobal.org" src="img/Logo2.png"></img>
+                        </a>
+                        <p id="copyrightMobile">&copy;2021 Liceo Bolivariano "Eduardo Delfin Mendez". Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </footer>
+            <script data-cfasync="false" src="https://edu.gcfglobal.org/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+
+</html>

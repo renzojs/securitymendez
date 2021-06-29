@@ -1,0 +1,24 @@
+.home-sub-header {
+    background: #008FFF;
+}
+
+.sub-header {
+    background: #008FFF;
+}
+
+.tutorial-banner {
+    background: #0277d1;
+}
+
+.tutorial-banner span {
+    color: #fff;
+}
+
+.material-icons2 {
+    background-image: url(img/x.png);
+    text-decoration: none;
+}
+
+.mobile-lesson-title {
+    background: #008FFF;
+}
